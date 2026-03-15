@@ -1,0 +1,93 @@
+---
+title: "Opus the Octopus — Knit Pattern"
+author: "Sarah Cassie Burnett"
+format:
+  html:
+    theme: cosmo
+    toc: true
+    code-fold: true
+    smooth-scroll: true
+page-layout: article
+date: today
+---
+
+> *Giant octopus made of superwash wool. Eight arms, infinite charm.*
+
+![Octopus by Sarah](https://images4-a.ravelrycache.com/uploads/Mathbikerchick/860953936/9498EFB4-2D4B-4C83-BF3A-3D74E1DEBA46_medium2.jpeg?webp=0){fig-alt="Photo of knitted octopus" width="480"}
+
+`$1000.00` *or*
+
+[Buy the pattern →](https://www.ravelry.com/patterns/library/opus-the-octopus){.btn .btn-primary target="_blank"}
+
+------------------------------------------------------------------------
+
+## Highlights
+
+-   **Handmade**
+-   Modular construction: body + 8 tentacles
+-   Beginner-friendly shaping with clear charts
+-   Printable PDF with photo walkthroughs
+
+::: callout-note
+## What makes it special?
+
+The large floppy head is worked in the round; tentacles use simple increases to create a natural curl—fun, fast, and giftable.
+:::
+
+## Specs (Table)
+
+| Feature | Value                                       |
+|--------:|:--------------------------------------------|
+|    Yarn | Worsted, superwash                          |
+|   Gauge | 19 sts & 29 rows per 4 inches               |
+| Needles | 3.75 mm (US 5)                              |
+|    Size | 36 inches tall                              |
+| Notions | Stitch markers, darning needle, safety eyes |
+
+## Options (Task List)
+
+-   [ ] Add safety eyes\
+-   [x] 3D printed eyes (not child-safe)\
+-   [x] Use two colors (contrast tentacles)
+
+## Yarn choice: Malabrigo Arroyo
+
+Marte
+
+:   rich, variegated red-brown body
+
+Moon Trio Full
+
+:   lighter, speckled yarn
+
+------------------------------------------------------------------------
+
+## FAQ (Accordion)
+
+::: panel-tabset
+### Yarn Substitutions
+
+Any DK yarn works held double. Acrylic also fine for easy care.
+
+### Washing
+
+Machine wash cold, gentle cycle. Reshape and dry flat.
+
+### Safety
+
+For babies/toddlers, skip safety eyes and embroider features.
+:::
+
+## Tiny Calculation (R Chunk)
+
+```{r}
+#| echo: true
+# Estimate yarn cost for one octopus
+skeins_needed <- 5
+price_per_skein <- 16.50
+stuffing <- 3.00
+hours_knit <- 40 
+hourly_rate <- 25.00
+total_materials <- hours_knit * hourly_rate + skeins_needed * price_per_skein + stuffing
+sprintf("$%.2f", total_materials)
+```
