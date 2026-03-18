@@ -24,8 +24,9 @@ penguins |>
     x = "Body mass (g)",
     y = "Count"
   )
-## The shape has mutiple peaks
-## Because this histogram includes multiple species with different typical body masses
+## The shape has multiple peaks
+## Because this histogram includes multiple species with different 
+## typical body masses
 
 ## Part B (10 points) - Old Faithful Waiting Times
 ## Plot a histogram of the variable waiting from the faithful data set. Set 
@@ -40,7 +41,7 @@ faithful |>
     y = "Count"
   )
 ## The shape is bimodal.
-## Because it have two behavior: short waits and long waits.
+## Because it has two behaviors: short waits and long waits.
 
 
 ## Part C (10 points) - Diamond Prices
@@ -56,8 +57,9 @@ diamonds |>
     y = "Count"
   )
 
-## The shape has a long tail to the right
-## Because most diamonds in this set have lower prices, only some diamonds are expensive
+## The shape is right-skewed and has a long tail to the right
+## Because most diamonds in this set have lower prices, 
+## only some diamonds are expensive
 
 
 ## Problem 2 (30 points) Measuring Distributions
@@ -105,6 +107,7 @@ upper_fence
 ## any potential outliers? If so, which data points? You may answer in a comment.
 
 ## Using the fences (-4, 20), any value > 20 or < -4 is a potential outlier.
+x[x > upper_fence | x < lower_fence]
 ## 25 is a potential outlier.
 
 
@@ -120,7 +123,9 @@ data |>
     x = "variables",
     y = "x"
   )
-## Yes it match with the given data
+## Yes, it matches the summary statistics from Part A.
+## The median line appears at ~8, the box spans from Q1 (~5) to Q3 (~11),
+## and the point at 25 is shown as an outlier beyond the upper fence.
 
 
 
@@ -130,7 +135,9 @@ data |>
 ## comment.
 sd_val <- sd(x)
 sd_val
-## The standard deviation of this data set is 7.612646
+## The standard deviation of this data set is 7.612646 which means that on 
+## average, each data is about 7.61 units away from the mean.
+## This indicates the data is fairly spread out.
 
 ## Part E (5 points) - Z-Scores
 ## Calculate the z-scores for each observation in the data set. According to 
@@ -139,5 +146,9 @@ sd_val
 mean_val <- mean(x)
 z_scores <- (x - mean_val) / sd_val
 z_scores
-## z-score for outlier is |z| > 2.
-## The z score for 25 is 2.0267028, so it is a outlier.
+
+## The z-score for 25 is approximately 2.03, 
+##which exceeds the threshold of |z| > 2,
+## so it is flagged as a potential outlier.
+## This is consistent with Part B and C because both the fence method
+##and the box plot identified 25 as the only potential outlier.
